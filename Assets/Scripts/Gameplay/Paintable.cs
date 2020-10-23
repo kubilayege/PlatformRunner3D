@@ -57,28 +57,11 @@ public class Paintable : MonoBehaviour
                     Color(ref hit, ((triangleIndex + mod * -8) + 7) * 3 + 0);
                 }
             }
-           
-
-            //colors[triangles[((hit.triangleIndex + mod * -2) +1) * 3 + 0]] = brushColor;
-            //colors[triangles[((hit.triangleIndex + mod * -2) +1) * 3 + 1]] = brushColor;
-            //colors[triangles[((hit.triangleIndex + mod * -2) +1) * 3 + 2]] = brushColor;
-
-            //colors[triangles[((hit.triangleIndex + mod * -3) +(mod-1)*2) * 3 + 0]] = brushColor;
-            //colors[triangles[((hit.triangleIndex + mod * -3) +(mod-1)*2) * 3 + 1]] = brushColor;
-            //colors[triangles[((hit.triangleIndex + mod * -3) +(mod-1)*2) * 3 + 2]] = brushColor;
-
-            //colors[triangles[((hit.triangleIndex + mod * -4) +(mod-1)*3) * 3 + 0]] = brushColor;
-            //colors[triangles[((hit.triangleIndex + mod * -4) +(mod-1)*3) * 3 + 1]] = brushColor;
-            //colors[triangles[((hit.triangleIndex + mod * -4) +(mod-1)*3) * 3 + 2]] = brushColor;
-
-            //colors[triangles[((hit.triangleIndex + mod * -5) +(mod-1)*4) * 3 + 0]] = brushColor;
-            //colors[triangles[((hit.triangleIndex + mod * -5) +(mod-1)*4) * 3 + 1]] = brushColor;
-            //colors[triangles[((hit.triangleIndex + mod * -5) +(mod-1)*4) * 3 + 2]] = brushColor;
-
 
             percentage = ((float)paintedVertexCount / (float)mesh.vertexCount)*100f;
-            Debug.Log(paintedVertexCount);
+
             GameManager.main.game.UpdateWallPercentage(percentage);
+
             mesh.colors = colors;
         }
     }

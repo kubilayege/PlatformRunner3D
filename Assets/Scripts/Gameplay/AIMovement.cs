@@ -46,16 +46,6 @@ public class AIMovement : Agent
             }
         }
 
-        //if (transform.position.HasReached(,0.5f))
-        //{
-        //        nextLocation = Vector3.zero;
-            
-        //    currentLerpDir = Vector3.Lerp(currentLerpDir, Vector3.zero, Time.deltaTime * _speed);
-            
-        //    Animate(currentLerpDir);
-
-        //}
-
     }
 
     private Vector3 ChoseLocationToMove()

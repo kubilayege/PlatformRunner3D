@@ -9,8 +9,6 @@ public class Agent : MonoBehaviour
         rb.isKinematic = true;
         rb.velocity = Vector3.zero;
         rb.isKinematic = false;
-        
-
     }
 
     public void CheckPos()
@@ -19,7 +17,6 @@ public class Agent : MonoBehaviour
             return;
         if (transform.position.y < -10f)
             ResetAgent();
-                
     }
 
 }

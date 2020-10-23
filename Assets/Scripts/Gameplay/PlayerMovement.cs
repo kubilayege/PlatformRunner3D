@@ -32,12 +32,6 @@ public class PlayerMovement : Agent
                 GameManager.main.game.Play();
                 rb.isKinematic = false;
             }
-            
-
-            //if (!Helper.IsPlaying())
-            //{
-            //    GameManager.main.game.Play();
-            //}
 
             lastTouchPlace = Input.mousePosition;
         }
